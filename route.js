@@ -92,6 +92,7 @@ router.post("/compile", (req, res) => {
         if(result===""){
           res.send("error");
         }
+        console.log(result);
         res.json(result);
       }
     );
