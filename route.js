@@ -4,7 +4,6 @@ const fs = require("fs");
 const bodyParser = require("body-parser");
 var request = require("request");
 var jsonParser = bodyParser.json();
-require('dotenv').config().
 
 router.post("/compile", (req, res) => {
   const code = req.body.code;
