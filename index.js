@@ -76,7 +76,6 @@ io.on("connection", (Socket) => {
     io.emit("outputsync",{outputvalue});
   });
 });
-
 if (process.env.NODE_ENV === "production") {
   console.log("In production stage");
   app.use(express.static(path.resolve(__dirname,"../", "client", "build")))
