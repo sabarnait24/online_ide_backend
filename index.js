@@ -9,7 +9,10 @@ const path = require("path");
 
 const io = require("socket.io")(http, {
   cors: {
+    origin: ["https://code-editor-2ss8.onrender.com"],
     origin: ["https://online-ide-frontend.vercel.app/"],
+    origin:'*',
+
   },
 });
 
